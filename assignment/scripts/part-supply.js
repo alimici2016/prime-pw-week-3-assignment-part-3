@@ -39,8 +39,7 @@ for (let i=0; i < supplyChanges.length; i++){
   }
   else if (supplyChanges[i] < 0){
     console.log(`Part count ${supplyChanges[i]}`);
-  }
-  else console.log(supplyChanges[i]);
+    }
   }
 
 // STRETCH GOALS
@@ -48,8 +47,13 @@ console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
 
-for (supplies of supplyChanges){
-  console.log(supplyChanges);
+for (supply of supplyChanges){
+  if (supply > 0){
+    console.log(`Added ${supply} parts.`);
+  }
+  else if (supply < 0) {
+    console.log(`Part count ${supply}.`);
+  }
 }
 
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
