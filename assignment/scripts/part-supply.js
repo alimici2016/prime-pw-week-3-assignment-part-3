@@ -63,3 +63,5 @@ console.log('8. Showing supplyChanges with "while" loop');
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:');
+let reducer = (accumulator, currentValue) => accumulator + currentValue
+console.log(supplyChanges.reduce(reducer));
